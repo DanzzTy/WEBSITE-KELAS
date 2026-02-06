@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kelas VIII-F | SMPN 1 Kertosono</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif}
+body{
+  background:#050510;
+  color:#fff;
+  overflow-x:hidden;
+}/* ===== Neon Style ===== */ .neon{ color:#0ff; text-shadow:0 0 5px #0ff,0 0 10px #0ff,0 0 20px #0ff; }
+
+header{ background:#07071a; padding:15px; text-align:center; border-bottom:2px solid #0ff; position:sticky; top:0; z-index:1000; }
+
+/* Verified Badge */ .verified-badge{ display:inline-flex; align-items:center; gap:6px; background:#0a1a2a; border:1px solid #00c3ff; padding:4px 10px; border-radius:20px; margin-top:6px; box-shadow:0 0 10px #00c3ff; font-size:13px; }
+
+.verified-badge span{ color:#00c3ff; }
+
+.verified-icon{ width:16px; height:16px; background:#00c3ff; border-radius:50%; display:inline-block; position:relative; }
+
+.verified-icon:after{ content:"✔"; color:#000; font-size:12px; position:absolute; top:50%; left:50%; transform:translate(-50%,-55%); font-weight:bold; }
+
+nav{ margin-top:10px; }
+
+nav button{ background:transparent; border:1px solid #0ff; color:#0ff; padding:8px 14px; margin:3px; cursor:pointer; border-radius:8px; transition:0.3s; }
+
+nav button:hover{ background:#0ff; color:#000; }
+
+section{ display:none; padding:30px 20px; max-width:1000px; margin:auto; }
+
+.active{display:block;}
+
+/* Floating profile */ .profile{ width:150px; height:150px; border-radius:50%; border:3px solid #0ff; margin:auto; display:block; object-fit:cover; animation:float 3s ease-in-out infinite; box-shadow:0 0 20px #0ff; }
+
+@keyframes float{ 0%{transform:translateY(0)} 50%{transform:translateY(-12px)} 100%{transform:translateY(0)} }
+
+.center{text-align:center;margin-top:20px}
+
+/* Status blinking */ .status{ color:#0f0; font-weight:bold; margin-top:10px; animation:blink 1s infinite; }
+
+@keyframes blink{ 50%{opacity:0.3} }
+
+.card{ background:#0b0b22; padding:20px; border-radius:15px; margin:15px 0; border:1px solid #0ff; box-shadow:0 0 15px rgba(0,255,255,0.3); }
+
+.gallery img{ width:100%; max-width:250px; border-radius:10px; margin:10px; border:2px solid #0ff; }
+
+.gallery{ display:flex; flex-wrap:wrap; justify-content:center; }
+
+footer{ text-align:center; padding:20px; border-top:1px solid #0ff; margin-top:40px; color:#aaa; }
+
+@media(max-width:600px){ nav button{display:block;width:100%;margin:5px 0} } </style>
+
+</head>
+<body><header>
+  <h1 class="neon">KELAS VIII‑F</h1>
+  <p>SMPN 1 KERTOSONO</p>  <!-- VERIFIED ICON (bukan halaman) -->  <div class="verified-badge">
+    <div class="verified-icon"></div>
+    <span>Verified Class Community</span>
+  </div>  <div class="status">● STATUS: ONLINE</div>  <nav>
+    <button onclick="openPage('home')">Beranda</button>
+    <button onclick="openPage('anggota')">Anggota</button>
+    <button onclick="openPage('galeri')">Galeri</button>
+    <button onclick="openPage('jadwal')">Jadwal</button>
+    <button onclick="openPage('kontak')">Kontak</button>
+  </nav>
+</header><!-- ===== BERANDA ===== --><section id="home" class="active">
+  <!-- GANTI gambar di bawah dengan foto kelas kalian -->
+  <img src="https://i.imgur.com/4AiXzf8.jpeg" class="profile">  <div class="center">
+    <h2 class="neon">Website Resmi Lanang VIII‑F</h2>
+    <p>Website khusus siswa lanang kelas VIII‑F SMPN 1 Kertosono.</p>
+    <p>Tempat info kelas, kumpul foto, jadwal, dan komunikasi.</p>
+  </div>  <div class="card">
+    <h3>Info Singkat</h3>
+    <p>• Website komunitas kelas</p>
+    <p>• Update kegiatan sekolah</p>
+    <p>• Tempat dokumentasi kelas</p>
+  </div>
+</section><!-- ===== ANGGOTA ===== --><section id="anggota">
+  <h2 class="neon">Daftar Anggota</h2>  <div class="card">
+    <p>Contoh struktur anggota:</p>
+    <p>• Ketua Kelas: ________</p>
+    <p>• Wakil: ________</p>
+    <p>• Bendahara: ________</p>
+    <p>• Sekretaris: ________</p>
+    <br>
+    <p>Tambahkan semua anggota kelas di sini.</p>
+  </div>
+</section><!-- ===== GALERI ===== --><section id="galeri">
+  <h2 class="neon">Galeri Kelas</h2>  <div class="gallery">
+    <!-- Ganti gambar dengan foto kelas -->
+    <img src="https://i.imgur.com/4AiXzf8.jpeg">
+    <img src="https://i.imgur.com/4AiXzf8.jpeg">
+    <img src="https://i.imgur.com/4AiXzf8.jpeg">
+  </div>
+</section><!-- ===== JADWAL ===== --><section id="jadwal">
+  <h2 class="neon">Jadwal Pelajaran</h2>  <div class="card">
+    <p>Senin - Matematika</p>
+    <p>Selasa - IPA</p>
+    <p>Rabu - Bahasa Indonesia</p>
+    <p>Kamis - IPS</p>
+    <p>Jumat - PJOK</p>
+  </div>
+</section><!-- ===== KONTAK ===== --><section id="kontak">
+  <h2 class="neon">Kontak & Sosial</h2>  <div class="card">
+    <p>Instagram kelas: @viiif_kertosono</p>
+    <p>WhatsApp grup: VIII‑F Official</p>
+    <p>Email kelas: viiif@classmail.com</p>
+  </div>
+</section><footer>
+  © 2026 Kelas VIII‑F SMPN 1 Kertosono
+</footer><script>
+function openPage(pageId){
+  document.querySelectorAll('section').forEach(sec=>sec.classList.remove('active'));
+  document.getElementById(pageId).classList.add('active');
+  window.scrollTo(0,0);
+}
+</script></body>
+</html>
